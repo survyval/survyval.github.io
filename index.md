@@ -10,8 +10,7 @@ Server Address:
 ```
 mc.survyval.net
 ```
-
-
+<br>
 ### Bedrock Edition
 Server Name:
 ```
