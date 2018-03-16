@@ -1,7 +1,7 @@
 Survyval is a survival server that feels nostalgic by keeping faith to how minecraft should've been IMHO, while retaining all the cool new stuff.
 
 # Joining
-### Java Edition:
+### Java Edition
 Server Name:
 ```
 Survyval
@@ -10,6 +10,7 @@ Server Address:
 ```
 mc.survyval.net
 ```
+
 ### Bedrock Edition
 Server Name:
 ```
