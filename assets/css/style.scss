@@ -17,26 +17,14 @@ h2, h3, h4, h5, h6 {
 }
 
 header {
- display: flex
-}
-
-.menu {
-  display: block;
-  flex-grow: 1;
-  flex: 1;
-  .btn {
-    display: inline-block;
-    text-align: center;
-    margin: 0;
-  }
+ display: block;
 }
 
 .title {
   display: block;
-  padding-left: 50px;
+  float: left;
+  padding-left: 15%;
   min-width: 400px;
-  flex-grow: 1;
-  flex: 1;
   h1 {
     font-size: 30px;
     line-height: 1.5;
@@ -58,5 +46,15 @@ header {
     font-size: 18px;
     font-weight: 300;
     color: #666;
+  }
+}
+
+.menu {
+  display: block;
+  padding-right: 15%;
+  .btn {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
   }
 }
