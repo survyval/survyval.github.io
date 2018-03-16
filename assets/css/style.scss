@@ -22,7 +22,7 @@ header {
 
 #menu {
   display: block;
-  padding: 0 0 10% 20px;
+  flex-grow: 1;
   flex: 1;
   .btn {
     display: inline-block;
