@@ -51,12 +51,13 @@ header {
 }
 
 .menu {
-  display: block;
+  display: flex;
   float: right;
   padding-right: 15%;
   width: 20%;
   .btn {
-    display: inline-block;
+    flex: 1;
+    display: block;
     text-align: center;
     margin: 0;
   }
