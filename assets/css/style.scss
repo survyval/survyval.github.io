@@ -2,7 +2,8 @@
 ---
 
 @import "{{ site.theme }}";
-
+$responsivePageBreak: 900px;
+$responsiveMinimal: 410px;
 * {
   margin: 0;
 }
@@ -22,80 +23,83 @@ header {
  display: block;
  padding-top: 20px;
  margin-bottom: 20px;
-}
 
-.title {
-  display: block;
-  float: left;
-  width: 50%;
-  padding-left: 15%;
-  h1 {
-    font-size: 30px;
-    line-height: 1.5;
-    margin: 0 0 0 -40px;
-    font-weight: bold;
-    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-    color: #b5e853;//$header;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-                 0 0 5px rgba(181, 232, 83, 0.1),
-                 0 0 10px rgba(181, 232, 83, 0.1);
-    letter-spacing: -1px;
-    -webkit-font-smoothing: antialiased;
-    :before {
-      content: "./ ";
-      font-size: 24px;
-    }
-  }
-  h2 {
-    font-size: 18px;
-    font-weight: 300;
-    color: #666;
-  }
-}
-
-.menu {
-  display: flex;
-  float: right;
-  padding-top: 16px;
-  padding-right: 15%;
-  width: 20%;
-  .btn {
-    flex: 1;
-    margin-right: 5px;
-    margin-left: 5px;
+  .title {
     display: block;
-    text-align: center;
-    margin: 0;
-    display: inline-block;
-    background-color: #b5e853;
-    padding: 8px 18px;
-    border-radius: 50px;
-    border: 2px solid rgba(0, 0, 0, 0.7);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.7);
-    border-top: 2px solid rgba(0, 0, 0, 1);
-    color: rgba(255, 255, 255, 0.8);
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-    text-decoration: none;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  header {
-    .title {
-      padding-left: 5%;
-      padding-right: 5%;
-      width: 90%;
+    float: left;
+    width: 50%;
+    padding-left: 15%;
+    h1 {
+      font-size: 30px;
+      line-height: 1.5;
+      margin: 0 0 0 -40px;
+      font-weight: bold;
+      font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+      color: #b5e853;//$header;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+                   0 0 5px rgba(181, 232, 83, 0.1),
+                   0 0 10px rgba(181, 232, 83, 0.1);
+      letter-spacing: -1px;
+      -webkit-font-smoothing: antialiased;
+      :before {
+        content: "./ ";
+        font-size: 24px;
+      }
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 300;
+      color: #666;
+      @media only screen and (max-width: $responsiveMinimal) {
+        font-size: 10px;
+      }
+    }
+    @media only screen and (max-width: $responsivePageBreak) {
+      padding-left: 10%;
+      padding-right: 10%;
+      width: 80%;
       float: none;
     }
-    .menu {
-      padding-left: 0;
+    @media only screen and (max-width: $responsiveMinimal) {
+      padding-left: 20%;
       padding-right: 0;
-      width: 100%;
-      float: none;
-     }
-   }
+      width: 80%;
+    }
+  }
+
+  .menu {
+    display: flex;
+    float: right;
+    padding-top: 16px;
+    padding-right: 15%;
+    width: 20%;
+    .btn {
+      flex: 1;
+      margin-right: 5px;
+      margin-left: 5px;
+      display: block;
+      text-align: center;
+      margin: 0;
+      display: inline-block;
+      background-color: #b5e853;
+      padding: 8px 10px;
+      border-radius: 50px;
+      border: 2px solid rgba(0, 0, 0, 0.7);
+      border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+      border-top: 2px solid rgba(0, 0, 0, 1);
+      color: rgba(255, 255, 255, 0.8);
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 13px;
+      text-decoration: none;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+  }
+  @media only screen and (max-width: $responsivePageBreak) {
+     padding-left: 0;
+     padding-right: 0;
+     width: 100%;
+     float: none;
+  }
 }
