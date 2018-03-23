@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 $responsivePageBreak: 900px;
-$responsiveMinimal: 410px;
+$responsiveMinimal: 420px;
 * {
   margin: 0;
 }
@@ -51,7 +51,7 @@ header {
       font-weight: 300;
       color: #666;
       @media only screen and (max-width: $responsiveMinimal) {
-        font-size: 10px;
+        font-size: 14px;
       }
     }
     @media only screen and (max-width: $responsivePageBreak) {
@@ -95,11 +95,11 @@ header {
       text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
     }
-  }
-  @media only screen and (max-width: $responsivePageBreak) {
-     padding-left: 0;
-     padding-right: 0;
-     width: 100%;
+    @media only screen and (max-width: $responsivePageBreak) {
+     padding-left: 5%;
+     padding-right: 5%;
+     width: 90%;
      float: none;
+    }
   }
 }
