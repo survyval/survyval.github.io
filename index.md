@@ -27,5 +27,5 @@ Port:
 
 # Rules
 * Be (relatively) mature
-* Don't grief unles you're at war
+* Don't grief unless you're at war
 * Have fun
